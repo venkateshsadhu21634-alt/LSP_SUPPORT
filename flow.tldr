@@ -214,84 +214,6 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1037.7112239635192,
-			"y": 600.9206046206621,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:09FbY5zf0N8P8nld3DLVf",
-			"type": "text",
-			"props": {
-				"color": "black",
-				"size": "m",
-				"w": 232.3125,
-				"font": "sans",
-				"textAlign": "start",
-				"autoSize": true,
-				"scale": 1,
-				"richText": {
-					"type": "doc",
-					"attrs": {
-						"dir": "auto"
-					},
-					"content": [
-						{
-							"type": "paragraph",
-							"attrs": {
-								"dir": "auto"
-							},
-							"content": [
-								{
-									"type": "text",
-									"text": ".create & stories "
-								}
-							]
-						},
-						{
-							"type": "paragraph",
-							"attrs": {
-								"dir": "auto"
-							},
-							"content": [
-								{
-									"type": "text",
-									"text": "messages"
-								}
-							]
-						},
-						{
-							"type": "paragraph",
-							"attrs": {
-								"dir": "auto"
-							},
-							"content": [
-								{
-									"type": "text",
-									"text": ".Independent of user"
-								}
-							]
-						},
-						{
-							"type": "paragraph",
-							"attrs": {
-								"dir": "auto"
-							},
-							"content": [
-								{
-									"type": "text",
-									"text": "auth"
-								}
-							]
-						}
-					]
-				}
-			},
-			"parentId": "page:page",
-			"index": "aWpMoXUl",
-			"typeName": "shape"
-		},
-		{
 			"x": 491.92766586909346,
 			"y": 979.9149284264698,
 			"rotation": 0,
@@ -694,9 +616,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 717.202360822642,
-			"y": -342.28703495087836,
-			"z": 0.4183355456047388,
+			"x": 455.72771927045164,
+			"y": -91.5708402953679,
+			"z": 0.45693327443883647,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -816,9 +738,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:i6WSsFt4GycxCStALxF55"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -827,6 +747,84 @@
 			"id": "instance_page_state:page:page",
 			"pageId": "page:page",
 			"typeName": "instance_page_state"
+		},
+		{
+			"x": 1033.3300107660998,
+			"y": 603.2378732984656,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Ta9JO-Y0fLRQjp9AbuSwb",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 240.5500030517578,
+				"font": "serif",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": ".create & stories"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "messages"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": ".Independent of user"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "auth"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "atuPjVkV",
+			"typeName": "shape"
 		},
 		{
 			"x": 449.45990078389764,
@@ -1426,12 +1424,14 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:size": "xl"
+				"tldraw:size": "m",
+				"tldraw:font": "serif",
+				"tldraw:geo": "rectangle"
 			},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "move",
+				"type": "cross",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -1441,7 +1441,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1196,
+				"w": 1287.2000732421875,
 				"h": 432
 			},
 			"insets": [
@@ -1727,6 +1727,12 @@
 									"text": "Flow"
 								}
 							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
 						}
 					]
 				}

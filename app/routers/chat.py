@@ -2,8 +2,11 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.core.database import get_db
 from app.models.chat import ChatMessage
+from app.models.user import User
+from app.models.user import User
 from app.schemas.chat_schema import ChatCreate, ChatResponse
 from typing import List
+from fastapi import HTTPException
 
 
 router = APIRouter(
@@ -26,14 +29,26 @@ def send_chat(data: ChatCreate, db: Session = Depends(get_db)):
 
     return chat
 
-
 @router.get("/history", response_model=List[ChatResponse])
 def chat_history(user_id: int, db: Session = Depends(get_db)):
-    """
-    Example:
-    /api/v1/support/chat/history?user_id=1
-    """
 
-    return db.query(ChatMessage).filter(
+    user = db.query(User).filter(User.id == user_id).first()
+
+    if not user:
+        raise HTTPException(
+            status_code=404,
+            detail=f"User with id {user_id} not found"
+        )
+
+    chats = db.query(ChatMessage).filter(
         ChatMessage.user_id == user_id
     ).all()
+
+ 
+    if not chats:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No chat history found for user_id {user_id}"
+        )
+
+    return chats
